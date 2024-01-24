@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="data:image/jpeg;base64,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" id="logo" alt="">
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="service.html">services</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+            <a href="login.html">login</a>
+        </nav>
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+            <a href="#">Connect</a>
+        </div>
+    </header>
+
+    <div class="background-image">
+        <div class="background-content">
+            <h1><b>Talk. Resolve. Heal.</b></h1>
+            <h2><b>Online Counselling Therapy With Top Psychologists<br>Anytime, Anywhere, Any device.</b></h2>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h1><b>Choose Help. Not Suffering.</b></h1>
+                    <p>Highly qualified team of some of the best names in psychology who deliver improved well-being to you. Carefully vetted through a rigorous selection process. Trained and experienced in all psychotherapy techniques.</p>
+                <ul>
+                    <li>English And All Regional Indian Language,</li>
+                    <li>100% Private & Secure Platform </li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#">Read more</a>
+                </div>
+                
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="https://thumbs.dreamstime.com/b/young-smiling-man-doctor-medical-specialist-medicine-concept-cute-d-icon-people-character-illustration-cartoon-minimal-style-274178658.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-services">
+        <div class="service-content">
+            <div class="left-service-content">
+                <h1><b>Specialized Help For Your Mental Health.</b></h1>
+            </div>
+            </div>
+        </div>
+
+        <div class="main-services">
+            <div class="inner-services-content">
+                <button>Anxiety & Stress</button>
+                <button>Depression</button>
+                <button>Relationship and Issues</button>
+                <button>OCD</button>
+                <button>Bipolar Disease</button>
+                <button>Psychosis</button>
+                <button>Grief and Loss</button>
+                <button>Trauma</button>
+                <button>LGBTQIA+</button>
+                <button>ADHD & Teenage Issues</button>                
+            </div>
+            <div class="read">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <h1><b>Our Platform</b></h1>
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <img src="https://static.vecteezy.com/system/resources/previews/015/304/837/original/blue-verified-tick-valid-seal-icon-in-flat-style-design-isolated-on-white-background-validation-concept-vector.jpg" alt="">
+                <figcaption><b>Verified</b></figcaption>
+            </div>
+
+            <div class="inner-gallery">
+                <img src="https://cdn-icons-png.flaticon.com/512/3967/3967853.png" alt="">
+                <figcaption><b>Nuanced Matching</b></figcaption>
+            </div>
+
+            <div class="inner-gallery">
+                <img src="data:image/png;base64,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" alt="">
+                <figcaption><b>Mood Journal</b></figcaption>
+            </div>
+
+            <div class="inner-gallery">
+                <img src="https://cdn11.bigcommerce.com/s-swdvv2w64y/product_images/uploaded_images/ncr22-hp-bannerelements-r.png?t=1648845122" alt="">
+                <figcaption><b>Happy place</b></figcaption>
+            </div>
+
+            <div class="inner-gallery">
+                <img src="https://images.squarespace-cdn.com/content/v1/596f25c2725e25fb89b3a6f4/1544176431098-WT0ELR52Q0X1IQC89YRH/discussion+cc3.0.png?format=1500w" alt="">
+                <figcaption><b>dicussion forum</b></figcaption>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="why-choseus">
+    <div class="main-chose">
+
+        <div class="inner-chose">
+            <h1><b>Best Online Counselling Platform in India </b></h1>
+
+            <div class="inner-chose-content">
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-notes-medical"></i>
+                    </div>
+                    <div class="icon-content">
+                        <p>Best Online Therapy in India for Depression and Anxiety </p>
+                    </div>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-hospital-user"></i>
+                        
+                    </div>
+                    <div class="icon-content">
+                        <p>Most Affordable Virtual Mental Health Service</p>
+                    </div>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="icon-content">
+                        <p>Secure and Confidential with HIPAA, GDPR and ISO Certification</p>
+                    </div>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-hospital-user"></i>
+                        
+                    </div>
+                    <div class="icon-content">
+                        <p>Top-rated Online Therapy in India for Stress & Burnout</p>
+                    </div>
+                </div>
+
+                <div class="main-inner-chose">
+                    <div class="chose-icon">
+                        <i class="fas fa-hospital-user"></i>
+                        
+                    </div>
+                    <div class="icon-content">
+                        <p>Secure and Confidential with HIPAA, GDPR and ISO Certification</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="head">
+    <h1><b>Decesive Counselling</b></h1>
+<div class="last">
+    <div class="roo">
+    <div class="l1">
+        <p class="p1">Decesive Counselling provides affordable Online Counselling & Therapy by Best Psychologists of India for Mental Health or Relationship <br> At HopeQure, Clients can Book Counselling Sessions, Take Time bound Therapy Programs, Get Free Self Assessment for Mental Health or Relationship Issues or read researched blogs about topics of your interest at Knowledge Hub.</p><br>
+        <p class="p1">HopeQure's EAP Program (Employee Assistance Program) is availed by many MNC's and top Corporates of India for unlimited counselling and employee productivity improvement.</p>
+    </div>
+    <div class="l2">
+        <h1><b>Online Counselling</b></h1>
+        <ol>
+            <li>Depression Counselling</li>
+            <li>Anxiety Counselling</li>
+            <li>OCD Counselling</li>
+            <li>stress Counselling</li>
+            <li>Online Diet Consultation</li>
+            <li>Congenitive behaviour Counselling</li>
+        </ol>
+        <h1><b>What people Search</b></h1>
+        <ol>
+            <li>What cause overthinking?</li>
+            <li>fear of something</li>
+            <li>depression qoutes</li>
+            <li>Megalophobia</li>
+        </ol>
+    </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<div class="footer">
+    <h1><b>Copyright © 2023 Decesive Counselling Pvt. Ltd.</b></h1>
+    <h3>Disclaimer: This is not a crisis or suicide prevention platform. If you are feeling suicidal, we suggest you to immediately call a suicide prevention helpline.</h3>
+<script src="/js/script.js"></script>
+</body>
+</html>
+
