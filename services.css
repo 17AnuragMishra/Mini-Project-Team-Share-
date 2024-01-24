@@ -1,0 +1,229 @@
+:root{
+    --mainclr:#239f85;
+    --secclr:#ff5d22;
+    --third:#DFE4E0;
+    --mainafterclr:hsl(167, 81%, 79%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Monospace;
+}
+html{
+    font-size: 62.5%;
+    
+}
+.header{
+    padding: 1rem 7%;
+    background-color: var(--mainclr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header #logo{
+    width: 50px;
+}
+.navbar a{
+    color: white;
+    font-size: 2.7rem;
+    margin-left: 2rem;
+    position: relative;
+    font-style:Monaco;
+  
+}
+.navbar a:after{
+    content: '';
+    background: var(--secclr);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    transition: .3s;
+}
+.navbar a:hover:after{
+    content: '';
+    background: var(--secclr);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+.icons div{
+    font-size: 2.7rem;
+    margin-right: 1rem;
+    color: white;
+    display: none;
+}
+.icons a{
+    color: white;
+    background: var(--secclr);
+    padding: 1.5rem 3rem;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    transition: .5s;
+}
+.icons a:hover{
+    background: transparent;
+    border: 1px solid var(--secclr);
+}
+.navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.background-image{
+    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAgKCAcIBwcICA0HBwcHBw8ICQcKFREWFhURHx8YHSggGBolGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0OFQ8NDisZFRkrKysrKzcrKy0tLS03OCsrNysrKys3LSsrKystKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAf/xAAaEAEBAQEBAQEAAAAAAAAAAAAAARECMRIh/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAGxEBAQEBAQADAAAAAAAAAAAAAAERAhIDMUH/2gAMAwEAAhEDEQA/APXqjppUdPMrz6x7Ydujth25fkYdsOkL7Q5Ovty9HGnLJpyfJ8teWkY81pK35rbmrBaGmr0wAAAAAAAAAAAAAAAAAAAAAAAVR0qp6TU1n0irqKw6ZdJXEqiYUbcNZ4y4bTx1cN+HTUU7UWum10VHbHtr3WXdc/bDth2zrXpnY5OnN0SuUqiYUXKuVEVG0rSVppoi2kaQzI1qABgEDAMgYGAgZAgCAABAtIwRFo06mmVKlUVFjSprOxnYhXJ4JEyFI04axly2njo4bctbWfVPqs7WnXTTql1WfVVaisOqxtTUWLDOxCMORWHIPJYUipDkVIvnlchyKkEi5Gs5aSFIeKkDTF4nBihgwYkKwYMGJCgMGITWiamwrEEokVNIGRFhAyIiBlSIgcMYMTgkXh4fk8LmNJPwuY0ka8xpzEdM6vpFT0npFKxWDGeM8TgkVgwsGFIeGFYeCRUI4qKi4uI5VK0jSKAC1AGACBgAgAASaoqmknCxQTiUBVSVIiMJxJJUVTSpGRwQoqHCiouLi4qJio1jSMuk1fSKyqKRKJKSMCAgDIGIcKHDgioqIVFxUXKaYcXFwzKGZgAzMiplSBFTSmpoBBKRUmVKlQRkREVOptTU0HEnEwlRUQcqpVa05q5WUqpWkq5R0iq6SVKgqZVCQIACAAABwjhw4Z8kqKioqHCilxcEMjUYMjMyJRWAJqVpqKmpBhKU0jpUqVIgVRamlaQJNRTOErBDgBhRnDKKVFQVJ0hRQQKpIGQBGQAAVEnBDilRMOLiouKTFNIuGZHFKAAMwDACamrqKmppEZJSVRVVNRU0qmmlnUUAjSk4qFFRUVADC1CKwopUVEVNOkiooIBJAiBaRggNI5TiTlEpyrNJxcXGkVEcrjWLigUNazBAaNMEBo0qm1SKm1NK0rQlnajTqRU2otTaLSCdRai0xEnC0lxUTFRcXFAjWo4tEUqKjK0hpay1noFIEQpaVJOpPQQLS09VEL5OHFRUKKjWNIqLiYqNY0hwyClGCABggAE1RUqTOxLSxNiLEWIqK0sTWViLEVKqSKikcI4QVFxEU0iooEalKikRa4qOcDDxizIUFSIqRklIAOQYBIvmCRci+YuQRchQ2saRUNIXKpQ0tGjT0wWjRo0wWjRo0wWjRo00gaRVNRV0qiorOxFa1FZ2IsQcAiEqik6IuVUUqJlOKioqKTDXFIwYoqnE4ip6XWdR0ikE04z1CouRPK4vlchyKggaxocMgZmNIHoPRpEWhWjUgaNVo1IGjVaVqbStLS1WhH0PovRasJlMzFTYtNKlWdJdRWdZ2AaRJ0lyrjKVpyrmqlXDTFNI0OlQDCOmdIMumfSaIYZM18tIA25a8qADRYAAMAAAAAAAAAUAAk1FARU0jgCf1KoqGFxcBUA6aaigM6zqaQDOppxfIC+T5XDMNY0f/9k=);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6%;
+    position: relative;
+
+}
+.background-content{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    font-style:Monaco;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.background-content h1{
+    color: var(--mainclr);
+    font-size: 75px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.background-content p{
+    color: var(--mainclr);
+    font-size: 19px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.background-content a{
+    background: var(--secclr);
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 2.5rem;
+    transition: .5s;
+    margin-top: 40px;
+    text-align: center;
+    
+}
+.background-content a:hover{
+    background: transparent;
+    border: 1px solid var(--secclr);
+    color: black;
+}
+.gallery{
+    padding: 4rem 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.gallery h1{
+    color: var(--mainclr);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.inner-gallery{
+    flex:1 1 300px;
+    font-size: 30px;
+    margin-bottom: 39px;
+    margin-right: 15px;
+
+}
+.inner-gallery img{
+    width: 85%;
+    transition: .3s;
+}
+.inner-gallery img:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+.inner-gallery figcaption{
+    color: var(--mainclr);
+    margin-bottom: 18px;
+}
+.gallery a{
+    background: var(--mainclr);
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 2.5rem;
+    transition: .5s;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.gallery a:hover{
+    background: white;
+    border: 1px solid var(--secclr);
+    color:var(--mainclr);
+}
+
+.footer{
+    padding: 6rem 7%;
+    background: var(--mainclr);
+}
+.footer h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+.footer h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--mainclr); 
+    background: var(--mainclr);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secclr); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--third); 
+  }
+
+
