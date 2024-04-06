@@ -1,8 +1,4 @@
-# WebD
-All Important to get started...
+# Mini Project
+Hello Everyone, I'm Anurag Mishra, and this repo is for the Mini Project for my college assignment, So make sure to check out the project which is a "Consultation Site" base project, and do suggest if there is any improvement required.
 
-Hello there, this is Anurag Mishra. This page is all about Web development which includes everything, lemme me tell you that, this will be very helpful for all the people out there.
-
-My goal is to provide all the necessary information you need to get started with Web Development and I'm damn sure I'll be able to do so.
-
-Thanks for visiting my page I appreciate it!!
+Thanks for visiting the site.
